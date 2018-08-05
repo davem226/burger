@@ -2,8 +2,9 @@ var mysql = require("mysql");
 
 var connection = mysql.createConnection({
     host: "localhost",
-    port: '/var/run/mysqld/mysqld.sock',
-    // port: 3306,
+    // port: '/var/run/mysqld/mysqld.sock',
+    // socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock',
+    port: 3306,
     user: "bootcamp",
     password: "notarealpassword",
     database: "burgers_db"
@@ -14,5 +15,7 @@ connection.connect(function(err) {
 
     console.log("Connected as id " + connection.threadId);
 });
+
+connection.end();
 
 module.exports = connection;
