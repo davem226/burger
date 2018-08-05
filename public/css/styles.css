@@ -1,0 +1,61 @@
+/* Set Fonts */
+/* ----------------------------------------------------------- */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-size: 40px;
+    color: saddlebrown;
+}
+#burger-to-add, #add-btn, .devour-btn {
+    font-size: 26px;
+}
+#left-box, #right-box {
+    font-size: 26px;
+    color: brown;
+}
+h4, #burger-to-add {
+    color: saddlebrown;
+}
+/* ----------------------------------------------------------- */
+
+
+/* Position text */
+/* ----------------------------------------------------------- */
+h1, #place-order-div {
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+#left-box, #right-box {
+    /* border: solid 1px; */
+    padding-left: 20px;
+}
+#left-box {
+    position: absolute;
+    left: 10%;
+    width: 30%;
+}
+#right-box {
+    position: absolute;
+    right: 5%;
+    width:40%;
+}
+/* ----------------------------------------------------------- */
+
+
+/* Colors */
+/* ----------------------------------------------------------- */
+body {
+    background-color: blanchedalmond;
+}
+
+#left-box, #right-box {
+    background-color: azure;
+}
+
+#add-btn, .devour-btn {
+    background-color: brown;
+    color: azure;
+}
+/* ----------------------------------------------------------- */

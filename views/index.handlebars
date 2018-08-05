@@ -1,0 +1,26 @@
+<h1>Eat-Da-Burger</h1>
+
+<div id="place-order-div">
+    <input id="burger-to-add" type="text">
+    <button id="add-btn">Place Order</button>
+</div>
+
+<div id="left-box">
+    <h4>Your Orders</h4>
+    <ol>
+        {{#each burgers}} {{#unless devoured}}
+        <li>{{burger_name}}
+            <button id="{{id}}" class="devour-btn">Devour It</button>
+        </li>
+        {{/unless}} {{/each}}
+    </ol>
+</div>
+
+<div id="right-box">
+    <h4>You've eaten, so far...</h4>
+    <ol>
+        {{#each burgers}} {{#if devoured}}
+        <li>{{burger_name}}</li>
+        {{/if}} {{/each}}
+    </ol>
+</div>
